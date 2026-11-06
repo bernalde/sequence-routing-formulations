@@ -1,8 +1,515 @@
 {
-  "status": "PASS_LOCAL_BUILD_AXIOMS_SANDBOXED_COMPARATOR_AND_BUNDLED_KERNELS",
-  "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
-  "mathlib_revision": "56a005855ea17e0b0958f73ec801ae140b0a1679",
-  "input_sha256": {
+  "status": "LOCAL_CHECKED_AGENT_REVIEWED_DOCUMENTARY_SUCCESSOR",
+  "scope": "Same previously reviewed mathematical interfaces and completed auxiliary proof propositions, now explicitly named source declarations",
+  "previous_exact_packet_evidence": {
+    "status": "PASS_LOCAL_BUILD_AXIOMS_SANDBOXED_COMPARATOR_AND_BUNDLED_KERNELS",
+    "lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+    "mathlib_revision": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+    "input_sha256": {
+      "Chapter10SequenceRoutes.lean": "519d9976bee99dfeaa53397ba171159d8747f155620bf09f0d1196c57b6399f5",
+      "Chapter10Sequence.lean": "713069b500e40905e1a15a7f5546bbde4e30ef10abe217c24dcc87e59c311b24",
+      "comparator.json": "1f1240989f51fa8e45e251981e0e9da30b5b41fef93f70d0d2c2db07de9dc463",
+      "lake-manifest.json": "bf74d227ef0f5c0468c14fcb858d2a6ea64ecdd96792576245dc4ab63e07232b",
+      "Solution.lean": "c47bcbbf848283a525643941c9d6d17b58b0b146d5813eef8791d1f13aeb76b1",
+      "Chapter02.lean": "3019ef1caad4ab531143bd937fae56812bb9959a658bbe7368b5d5c761cc08af",
+      "lean-toolchain": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+      "Chapter10RoutePadding.lean": "a3bd0146da9551d25dc8b26abdf7074b20d2b57290113b5ad2b2aab00b3eca7a",
+      "Chapter10RoutingData.lean": "65e9c1881559f306dbc30730c4bb6d37671ccd9441d98f75ede5714d744b2807",
+      "Chapter10.lean": "8a91be8dd1e48d1d263dad332c95e60745553bcd12aeefbfcf2093bfc521e77d",
+      "Chapter02Model.lean": "01043a5cc7eb7291f008533cf2c8276773368541a7a15ef83756f50fc6f3a535",
+      "Chapter10SequenceTiming.lean": "cf2e1db69529dabe8c025c5a466952ea574d9a1e17de30af9e8d1562260263b6",
+      "Chapter10RouteAllowedPadding.lean": "35f3ad2f330f41becef3556350e85513c625df53f7f80a1cbbf2630c1f969711",
+      "Challenge.lean": "9049d1d24a29b43462b4d4d054e1a33d0137fa857e75f7bba0349c287dd1cabd",
+      "AxiomAudit.lean": "3a0e67a028283bb0812f9c830514fa9f7ddde59779df8bc1fb05451b3a24d270",
+      "lakefile.toml": "3a484d1ec0f9a96f0db500e7691fbf3f86a24b4b4e30c3c7c67b313309cc9d71",
+      "Chapter10Routes.lean": "ac88939a9bcfc39413594ed9931c37924c8e22b0900e97974b4fb39d3942ec0f"
+    },
+    "main_theorem_targets": [
+      "Chapter10.Sequence.palomar_literal_iff_decoded",
+      "Chapter10.Sequence.palomar_literal_decodes_elementary_paths",
+      "Chapter10.Sequence.palomar_bounded_traces_encode",
+      "Chapter10.Sequence.palomar_decoded_cost",
+      "Chapter10.Sequence.palomar_literal_timing_iff_schedules",
+      "Chapter10.Sequence.palomar_literal_timing_exists_iff",
+      "Chapter10.Sequence.palomar_literal_duration_minimum"
+    ],
+    "auxiliary_proof_targets": [
+      "Chapter10.Sequence.padSlots._proof_2",
+      "Chapter10.Sequence.penultimate._proof_2",
+      "Chapter10.Sequence.second._proof_2"
+    ],
+    "comparison_boundary": "The seven main statements and three auxiliary proof propositions are compared by exact types. Every computational definition remains structurally compared; no definition body exemption. The completed Solution proofs are axiom-audited and kernel-replayed.",
+    "solution_axioms": {
+      "Chapter10.Sequence.palomar_literal_iff_decoded": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "Chapter10.Sequence.palomar_literal_decodes_elementary_paths": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "Chapter10.Sequence.palomar_bounded_traces_encode": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "Chapter10.Sequence.palomar_decoded_cost": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "Chapter10.Sequence.palomar_literal_timing_iff_schedules": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "Chapter10.Sequence.palomar_literal_timing_exists_iff": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "Chapter10.Sequence.palomar_literal_duration_minimum": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "Chapter10.Sequence.padSlots._proof_2": [
+        "Quot.sound",
+        "propext"
+      ],
+      "Chapter10.Sequence.penultimate._proof_2": [
+        "Quot.sound",
+        "propext"
+      ],
+      "Chapter10.Sequence.second._proof_2": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "kernels": [
+      "Lean",
+      "NanoDa",
+      "con-ron"
+    ],
+    "steps": [
+      {
+        "name": "lean-version",
+        "exit_code": 0,
+        "elapsed_seconds": 0.0440752700669691,
+        "stdout_sha256": "eb22144228dd41cd51a0c84af4f976cd0cef473102dcf99b60be756b11f2b95a",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "name": "build-Chapter02",
+        "exit_code": 0,
+        "elapsed_seconds": 1.3418087419122458,
+        "stdout_sha256": "0f1ae9b6750da7b2737b6cda7c013ede6e99dd8a07a1f560b7157ff275de80f1",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "name": "build-Chapter02Model",
+        "exit_code": 0,
+        "elapsed_seconds": 1.255890412023291,
+        "stdout_sha256": "1d8ec2f25ce635ac0b7a522af3f8ae8e40ac2d219ff035e713492f9c1ad0da93",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "name": "build-Chapter10",
+        "exit_code": 0,
+        "elapsed_seconds": 1.5393484279047698,
+        "stdout_sha256": "0236a4dd1d939f54c534a85cd6a3ed8713b0164fc2f165a967a4a8060c60e2c5",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "name": "build-Chapter10RoutingData",
+        "exit_code": 0,
+        "elapsed_seconds": 1.6171618188964203,
+        "stdout_sha256": "6f5c945ec5f36123b0415ba1f0fc65255bad359a263412d25b59ac090aa4e075",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "name": "build-Chapter10Routes",
+        "exit_code": 0,
+        "elapsed_seconds": 1.5405457540182397,
+        "stdout_sha256": "ea5ead952574961de4df0dfd0170830016e06f4e5d410d0709a9c44c418c27ae",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "name": "build-Chapter10RoutePadding",
+        "exit_code": 0,
+        "elapsed_seconds": 1.6205781670287251,
+        "stdout_sha256": "45bb9cbc3c3188f0f58d6f3a764a23c2a4a32ad02dc53051194a39bce6a28ae8",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "name": "build-Chapter10RouteAllowedPadding",
+        "exit_code": 0,
+        "elapsed_seconds": 1.605935076950118,
+        "stdout_sha256": "78fb76344e2f7e56abed3eda55c86701f2fe1dd6b334edc03535d0c7a09e959c",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "name": "build-Chapter10Sequence",
+        "exit_code": 0,
+        "elapsed_seconds": 1.560467611066997,
+        "stdout_sha256": "c35f2dbfe95bb7d53dab0eb0cca743441752f6144afad0c34e0ee10e9c9cc0cb",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "name": "build-Chapter10SequenceTiming",
+        "exit_code": 0,
+        "elapsed_seconds": 1.6044120109872892,
+        "stdout_sha256": "b94fea06625bfce6e26fa19ae06688b04092f366060e1889bdd14f5ae000ba52",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "name": "build-Chapter10SequenceRoutes",
+        "exit_code": 0,
+        "elapsed_seconds": 1.569514829898253,
+        "stdout_sha256": "5c71f772ce5e188a33dd9fb89fa8ddac82eda31276733220f51dbc75a20bd0b7",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "name": "build-Challenge",
+        "exit_code": 0,
+        "elapsed_seconds": 4.400382557068951,
+        "stdout_sha256": "c0c567853a7f5d450d6142f47c27aa4c8d5cafa82b336dbb6a1fab8d8f21755c",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "name": "build-Solution",
+        "exit_code": 0,
+        "elapsed_seconds": 1.5944610049482435,
+        "stdout_sha256": "0fbba45659f3706e3e3dcee1e381231d65cd1ed9d713167b47eb7db1efce29e7",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "name": "default-build",
+        "exit_code": 0,
+        "elapsed_seconds": 4.492851685965434,
+        "stdout_sha256": "cecc5964c15d0570333036662e9c4b70d3287fb7c03169d19cfa655e22af7e1c",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "name": "axioms",
+        "exit_code": 0,
+        "elapsed_seconds": 2.317187608918175,
+        "stdout_sha256": "ea2438122fa4da333642d3731f5bab8b773427efa3547ab56c0dd91799908c28",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "name": "comparator",
+        "exit_code": 0,
+        "elapsed_seconds": 29.014986466034316,
+        "stdout_sha256": "d3bf4f66d159dca742781ab7cefdeddddf1a0433580fb28415249210fe908c02",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    ],
+    "resource_limits": {
+      "memory_max_bytes": 12884901888,
+      "swap_max_bytes": 0,
+      "cpu_quota_percent": 200,
+      "observed_memory_peak_bytes": 806850560,
+      "oom_events": 0
+    },
+    "cache_reuse": "Task-owned physical copy of pinned upstream cache. Candidate modules compiled during this task; final pass reuses exact unchanged project outputs from preserved attempts. Not a fresh upstream rebuild.",
+    "scope": "Local packaging of accepted source results; no new original theorem credit, hosted preflight, service review or registration."
+  },
+  "current_source_repair": {
+    "classification": "Source-level visibility repair only; no new mathematics or helper research credit",
+    "source_diagnostic": {
+      "receipt": "PROJECT-S290 verification/routing-renderable-proof-diag01/result.json",
+      "receipt_sha256": "730f525d0d2e3e011edaac62e6a5b3a862676af3df610132488293d939251b4d",
+      "stdout_sha256": "ef3b5bbb218faf6855da280bae2b6981761a0c513df631dcc925430c5b8e2907"
+    },
+    "declarations": [
+      {
+        "declaration": "Chapter10.Sequence.second._proof_2",
+        "complete_proposition": "\u2200 (k : Nat), 1 < k+2",
+        "source_header": "theorem second._proof_2 (k : \u2115) : 1 < k+2 := by omega",
+        "parent_definition": "Chapter10.Sequence.second",
+        "prior_parent_surface_sha256": "b70e5434a80e015afc7fef0fa4bb62517792d60b36ef22406630a4f0574edb51",
+        "new_parent_surface_sha256": "ddd266da77284df048759d2d092d4134b8f086235250fda0895bb83ee93b07c3",
+        "parent_before": "abbrev second (k : \u2115) : Fin (k+2) := \u27e81, by omega\u27e9",
+        "parent_after": "abbrev second (k : \u2115) : Fin (k+2) := \u27e81, second._proof_2 k\u27e9",
+        "completed_theorem_sha256": "1593c6a95f4d0491f10afcba289d811f53242df31689daf48ef144d6d0234d10",
+        "proof": "Completed ordinary omega theorem; exact elaborated type and full computational constant comparison remain mandatory."
+      },
+      {
+        "declaration": "Chapter10.Sequence.penultimate._proof_2",
+        "complete_proposition": "\u2200 (k : Nat), k < k+2",
+        "source_header": "theorem penultimate._proof_2 (k : \u2115) : k < k+2 := by omega",
+        "parent_definition": "Chapter10.Sequence.penultimate",
+        "prior_parent_surface_sha256": "3c76c5dcf7a56114f39d3114753ee7feee9513e35c1787fbeca126d30f3bf9af",
+        "new_parent_surface_sha256": "65d33a2e2e558cd25d4ee2dd614977104cc1ebee1636b705fe761cba7029a728",
+        "parent_before": "abbrev penultimate (k : \u2115) : Fin (k+2) := \u27e8k, by omega\u27e9",
+        "parent_after": "abbrev penultimate (k : \u2115) : Fin (k+2) := \u27e8k, penultimate._proof_2 k\u27e9",
+        "completed_theorem_sha256": "4c100e97cf7a4d9d7f6cd99cdc316a1a27a94f30c14196a11b668021a30f1b25",
+        "proof": "Completed ordinary omega theorem; exact elaborated type and full computational constant comparison remain mandatory."
+      }
+    ],
+    "all_other_Challenge_bytes_unchanged": true,
+    "source_copies_Solution_main_types_config_axioms_pins_metadata_unchanged": true,
+    "compiled_range_audit": "Private post-build audit of Challenge.ilean for every selected target; not a claim of full remote Verso rendering",
+    "no_computational_exemption": true,
+    "no_raw_declaration_or_anchor_insertion": true,
+    "documentation_comment_placement": "Existing parent doc comments retained immediately above parent abbreviations; theorem doc comments placed above the theorem commands."
+  },
+  "statement_size": {
+    "lines": 258,
+    "bytes": 11999
+  },
+  "current_local_full_gate": "PASS sequence-renderable-fix02; exact mechanical_verification receipt below.",
+  "affected_source_independent_review": "SATISFACTORY affected-source review; exact independent_review binding below; no hosted rendering verdict.",
+  "remote_renderer": "not run; static explicit headers and compiler ranges do not certify Verso rendering",
+  "new_publication_hosted_intake_registration": "unperformed",
+  "cycle_accounting": {
+    "current_cycle": 2,
+    "maximum": 5,
+    "prior_attempts_retained": true,
+    "counter_not_reset": true
+  },
+  "telemetry": {
+    "native_helper_tokens": null,
+    "estimated_cost_usd": null,
+    "actual_billed_usd": null,
+    "helper_model_inclusion_overlap": "unknown; coordinator alone reconciles; no helper totals inferred"
+  },
+  "retained_current_first_failure": {
+    "receipt": "PROJECT-S290 verification/sequence-renderable-fix01/result.json",
+    "sha256": "d49a4809efdfe77685ccc9142347d91acbdd90a518714fb677d486f8aa72555c",
+    "passed": "Lean version and all10canonicalsourcebuilds",
+    "failure": "Challenge parser rejected duplicate consecutive doc comments; corrected only comment placement; no mathematical or full-constant comparison verdict"
+  },
+  "lean_build_run": true,
+  "axiom_check_run": true,
+  "comparator_run": true,
+  "independent_review": {
+    "verdict": "SATISFACTORY",
+    "record": "PROJECT-S290 review/ROUTING-RENDERABLE-SEQUENCE-REVIEW.md",
+    "report_sha256": "2ac35eec05274ca87a157a9e60991be3cac890e7ff72256035dba6f2973695ca",
+    "findings_sha256": "3bb8b44461ed08000f504a62681f59633d3d19d88a01ec050c214699689a1872",
+    "scope": "Affected source-anchor change only; no hosted rendering verdict",
+    "mathematical_or_mechanical_mandatory_findings": [],
+    "documentary_delta_closure": "Recorded separately by coordinator after independent inspection of this exact documentary successor.",
+    "reviewer_reran_proof_checks": false,
+    "human_peer_review_claimed": false,
+    "requested_model": "Astra",
+    "requested_effort": "high",
+    "observed_runtime_model": null,
+    "observed_runtime_effort": null
+  },
+  "mechanical_verification": {
+    "record": "PROJECT-S290 verification/sequence-renderable-fix02/result.json",
+    "sha256": "9ff968f8057b5bbcfb9f3e068742b2e220ede46c004c9c1647dcebb787c51321",
+    "state": "PASS_BUILD_AXIOMS_SANDBOXED_COMPARATOR_LEAN_NANODA_CONRON",
+    "actual_lean_version": "Lean (version 4.35.0, x86_64-unknown-linux-gnu, commit eb6cafb7290e8bd5f2937522d8d804f58f02bafc, Release)",
+    "source_build": "Candidate project sources built explicitly; unchanged exact local outputs and pinned upstream caches may be reused, with upstream cache mounted read-only",
+    "cold_rebuild_claimed": false,
+    "serial_module_order": [
+      "Chapter02",
+      "Chapter02Model",
+      "Chapter10",
+      "Chapter10RoutingData",
+      "Chapter10Routes",
+      "Chapter10RoutePadding",
+      "Chapter10RouteAllowedPadding",
+      "Chapter10Sequence",
+      "Chapter10SequenceTiming",
+      "Chapter10SequenceRoutes",
+      "Challenge",
+      "Solution"
+    ],
+    "steps": [
+      {
+        "label": "lean-version",
+        "exit_code": 0,
+        "elapsed_seconds": 0.037813809933140874,
+        "stdout_sha256": "eb22144228dd41cd51a0c84af4f976cd0cef473102dcf99b60be756b11f2b95a",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "label": "build-Chapter02",
+        "exit_code": 0,
+        "elapsed_seconds": 1.3831271970411763,
+        "stdout_sha256": "0f1ae9b6750da7b2737b6cda7c013ede6e99dd8a07a1f560b7157ff275de80f1",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "label": "build-Chapter02Model",
+        "exit_code": 0,
+        "elapsed_seconds": 1.3435272549977526,
+        "stdout_sha256": "1d8ec2f25ce635ac0b7a522af3f8ae8e40ac2d219ff035e713492f9c1ad0da93",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "label": "build-Chapter10",
+        "exit_code": 0,
+        "elapsed_seconds": 1.6711441620718688,
+        "stdout_sha256": "f81212825c0c3fe8ed8db6b7bac85e737c3286e3ef9c35f40522ce9c2c63ffe5",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "label": "build-Chapter10RoutingData",
+        "exit_code": 0,
+        "elapsed_seconds": 1.6823502589249983,
+        "stdout_sha256": "d10c09537e40c051ba689eeaeda13aca4180bb37184da17c2ea45467c1aa417f",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "label": "build-Chapter10Routes",
+        "exit_code": 0,
+        "elapsed_seconds": 1.7431963910348713,
+        "stdout_sha256": "84fa523d55cb9920bbf18c8b85cbea063ae874392134f699cb9979b2669363a2",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "label": "build-Chapter10RoutePadding",
+        "exit_code": 0,
+        "elapsed_seconds": 1.7672742299037054,
+        "stdout_sha256": "9e84dbb1754da8feb3f89bb1e25812ef9786f647d5c224b33330ee13b989925b",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "label": "build-Chapter10RouteAllowedPadding",
+        "exit_code": 0,
+        "elapsed_seconds": 1.666833320981823,
+        "stdout_sha256": "764d3e27fb7e608524de1938271620a741d974af33f517a051f6867e7ca8698d",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "label": "build-Chapter10Sequence",
+        "exit_code": 0,
+        "elapsed_seconds": 1.8482012049062178,
+        "stdout_sha256": "ef7e1fc19bce935036e5e3cc7bfe14545cbb786694e8a12f667ca20d7fdbec82",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "label": "build-Chapter10SequenceTiming",
+        "exit_code": 0,
+        "elapsed_seconds": 2.237339750980027,
+        "stdout_sha256": "1172dfb4e4a27f78fe24ec690c4ae10f4195deb1157a1d8d8587fae205bede5d",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "label": "build-Chapter10SequenceRoutes",
+        "exit_code": 0,
+        "elapsed_seconds": 2.184020823915489,
+        "stdout_sha256": "d71e7bc8add9557eadf0ccdde05cb5e3129a54c5d6f844825a995fa7ceecd620",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "label": "build-Challenge",
+        "exit_code": 0,
+        "elapsed_seconds": 10.214570273994468,
+        "stdout_sha256": "f59c8e13f39718e9989bf61276a33778d45ca9131fb4a18858b619e292658513",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "label": "build-Solution",
+        "exit_code": 0,
+        "elapsed_seconds": 4.310583375045098,
+        "stdout_sha256": "7af2cff8107661c8e18df830f2b45105dd83219432bbc27532308ae78dfdfed6",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "label": "default-build",
+        "exit_code": 0,
+        "elapsed_seconds": 5.2702602540375665,
+        "stdout_sha256": "e5121c089143a2e1449207eff192fae844260142eca3a980f76bd3ae4808bb21",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "label": "axioms",
+        "exit_code": 0,
+        "elapsed_seconds": 2.6939739959780127,
+        "stdout_sha256": "ea2438122fa4da333642d3731f5bab8b773427efa3547ab56c0dd91799908c28",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      },
+      {
+        "label": "comparator",
+        "exit_code": 0,
+        "elapsed_seconds": 35.92798153590411,
+        "stdout_sha256": "0dddad58799910ed172c44715eb4281916bcabfee94cf17af12b2dbe10fc9888",
+        "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
+      }
+    ],
+    "solution_axioms": {
+      "Chapter10.Sequence.palomar_literal_iff_decoded": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "Chapter10.Sequence.palomar_literal_decodes_elementary_paths": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "Chapter10.Sequence.palomar_bounded_traces_encode": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "Chapter10.Sequence.palomar_decoded_cost": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "Chapter10.Sequence.palomar_literal_timing_iff_schedules": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "Chapter10.Sequence.palomar_literal_timing_exists_iff": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "Chapter10.Sequence.palomar_literal_duration_minimum": [
+        "Classical.choice",
+        "Quot.sound",
+        "propext"
+      ],
+      "Chapter10.Sequence.padSlots._proof_2": [
+        "Quot.sound",
+        "propext"
+      ],
+      "Chapter10.Sequence.penultimate._proof_2": [
+        "Quot.sound",
+        "propext"
+      ],
+      "Chapter10.Sequence.second._proof_2": [
+        "Quot.sound",
+        "propext"
+      ]
+    },
+    "completed_utc": "2026-11-06T22:34:13.520637+00:00",
+    "resources": {
+      "memory_max": 12884901888,
+      "swap_max": 0,
+      "cpu_max": [
+        200000,
+        100000
+      ],
+      "memory_peak_bytes": 1082810368,
+      "memory_events": "low 0\nhigh 0\nmax 0\noom 0\noom_kill 0\noom_group_kill 0\n"
+    },
+    "kernels_passed": [
+      "Lean default",
+      "NanoDa",
+      "con-ron"
+    ],
+    "source_header_scanner_sha256": "6919911f9905fcc9f01cac96e8c98a348a192a5550a10d127b0b3ced2d74bc5a",
+    "warning_free_claimed": false,
+    "limits": [
+      "Retained actual logs may include linters, deliberate Challenge placeholder warnings and informational kernel notices.",
+      "Unchanged exact local outputs and pinned read-only upstream caches may be reused.",
+      "Runtime, compiler, upstream cache and checker binary trust remain; independent reviewer inspected receipts, did not rerun checks."
+    ]
+  },
+  "unchanged_proof_compiler_inputs": {
     "Chapter10SequenceRoutes.lean": "519d9976bee99dfeaa53397ba171159d8747f155620bf09f0d1196c57b6399f5",
     "Chapter10Sequence.lean": "713069b500e40905e1a15a7f5546bbde4e30ef10abe217c24dcc87e59c311b24",
     "comparator.json": "1f1240989f51fa8e45e251981e0e9da30b5b41fef93f70d0d2c2db07de9dc463",
@@ -16,201 +523,31 @@
     "Chapter02Model.lean": "01043a5cc7eb7291f008533cf2c8276773368541a7a15ef83756f50fc6f3a535",
     "Chapter10SequenceTiming.lean": "cf2e1db69529dabe8c025c5a466952ea574d9a1e17de30af9e8d1562260263b6",
     "Chapter10RouteAllowedPadding.lean": "35f3ad2f330f41becef3556350e85513c625df53f7f80a1cbbf2630c1f969711",
-    "Challenge.lean": "9049d1d24a29b43462b4d4d054e1a33d0137fa857e75f7bba0349c287dd1cabd",
+    "Challenge.lean": "f4e5b998ff932ae5596e05c41fc5086226f563c60ea39199b77b6f3fa2970108",
     "AxiomAudit.lean": "3a0e67a028283bb0812f9c830514fa9f7ddde59779df8bc1fb05451b3a24d270",
     "lakefile.toml": "3a484d1ec0f9a96f0db500e7691fbf3f86a24b4b4e30c3c7c67b313309cc9d71",
     "Chapter10Routes.lean": "ac88939a9bcfc39413594ed9931c37924c8e22b0900e97974b4fb39d3942ec0f"
   },
-  "main_theorem_targets": [
-    "Chapter10.Sequence.palomar_literal_iff_decoded",
-    "Chapter10.Sequence.palomar_literal_decodes_elementary_paths",
-    "Chapter10.Sequence.palomar_bounded_traces_encode",
-    "Chapter10.Sequence.palomar_decoded_cost",
-    "Chapter10.Sequence.palomar_literal_timing_iff_schedules",
-    "Chapter10.Sequence.palomar_literal_timing_exists_iff",
-    "Chapter10.Sequence.palomar_literal_duration_minimum"
-  ],
-  "auxiliary_proof_targets": [
-    "Chapter10.Sequence.padSlots._proof_2",
-    "Chapter10.Sequence.penultimate._proof_2",
-    "Chapter10.Sequence.second._proof_2"
-  ],
-  "comparison_boundary": "The seven main statements and three auxiliary proof propositions are compared by exact types. Every computational definition remains structurally compared; no definition body exemption. The completed Solution proofs are axiom-audited and kernel-replayed.",
-  "solution_axioms": {
-    "Chapter10.Sequence.palomar_literal_iff_decoded": [
-      "Classical.choice",
-      "Quot.sound",
-      "propext"
-    ],
-    "Chapter10.Sequence.palomar_literal_decodes_elementary_paths": [
-      "Classical.choice",
-      "Quot.sound",
-      "propext"
-    ],
-    "Chapter10.Sequence.palomar_bounded_traces_encode": [
-      "Classical.choice",
-      "Quot.sound",
-      "propext"
-    ],
-    "Chapter10.Sequence.palomar_decoded_cost": [
-      "Classical.choice",
-      "Quot.sound",
-      "propext"
-    ],
-    "Chapter10.Sequence.palomar_literal_timing_iff_schedules": [
-      "Classical.choice",
-      "Quot.sound",
-      "propext"
-    ],
-    "Chapter10.Sequence.palomar_literal_timing_exists_iff": [
-      "Classical.choice",
-      "Quot.sound",
-      "propext"
-    ],
-    "Chapter10.Sequence.palomar_literal_duration_minimum": [
-      "Classical.choice",
-      "Quot.sound",
-      "propext"
-    ],
-    "Chapter10.Sequence.padSlots._proof_2": [
-      "Quot.sound",
-      "propext"
-    ],
-    "Chapter10.Sequence.penultimate._proof_2": [
-      "Quot.sound",
-      "propext"
-    ],
-    "Chapter10.Sequence.second._proof_2": [
-      "Quot.sound",
-      "propext"
-    ]
+  "additional_unchanged_diagnostic_inputs": {},
+  "documentary_closure": "Coordinator retains independent exact-delta closure separately; this file does not certify its own successor.",
+  "new_public_commit": false,
+  "hosted_preflight": "not run",
+  "submitted": false,
+  "registered": false,
+  "source_anchor_audit": {
+    "record": "PROJECT-S290 routing-notes/sequence-routing-renderable-COMPILER-RANGE-AUDIT.json",
+    "sha256": "5321d581cc4bd0f6bcb25abb4ba62b5d5d3674380ce71876dd68ff1e813ba5c6",
+    "selected_targets": 10,
+    "all_selected_explicit_source_headers_and_compiler_ranges": true,
+    "limits": "Static compiler-backed range/name inventory, not actual hosted Verso rendering acceptance."
   },
-  "kernels": [
-    "Lean",
-    "NanoDa",
-    "con-ron"
-  ],
-  "steps": [
-    {
-      "name": "lean-version",
-      "exit_code": 0,
-      "elapsed_seconds": 0.0440752700669691,
-      "stdout_sha256": "eb22144228dd41cd51a0c84af4f976cd0cef473102dcf99b60be756b11f2b95a",
-      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-    },
-    {
-      "name": "build-Chapter02",
-      "exit_code": 0,
-      "elapsed_seconds": 1.3418087419122458,
-      "stdout_sha256": "0f1ae9b6750da7b2737b6cda7c013ede6e99dd8a07a1f560b7157ff275de80f1",
-      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-    },
-    {
-      "name": "build-Chapter02Model",
-      "exit_code": 0,
-      "elapsed_seconds": 1.255890412023291,
-      "stdout_sha256": "1d8ec2f25ce635ac0b7a522af3f8ae8e40ac2d219ff035e713492f9c1ad0da93",
-      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-    },
-    {
-      "name": "build-Chapter10",
-      "exit_code": 0,
-      "elapsed_seconds": 1.5393484279047698,
-      "stdout_sha256": "0236a4dd1d939f54c534a85cd6a3ed8713b0164fc2f165a967a4a8060c60e2c5",
-      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-    },
-    {
-      "name": "build-Chapter10RoutingData",
-      "exit_code": 0,
-      "elapsed_seconds": 1.6171618188964203,
-      "stdout_sha256": "6f5c945ec5f36123b0415ba1f0fc65255bad359a263412d25b59ac090aa4e075",
-      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-    },
-    {
-      "name": "build-Chapter10Routes",
-      "exit_code": 0,
-      "elapsed_seconds": 1.5405457540182397,
-      "stdout_sha256": "ea5ead952574961de4df0dfd0170830016e06f4e5d410d0709a9c44c418c27ae",
-      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-    },
-    {
-      "name": "build-Chapter10RoutePadding",
-      "exit_code": 0,
-      "elapsed_seconds": 1.6205781670287251,
-      "stdout_sha256": "45bb9cbc3c3188f0f58d6f3a764a23c2a4a32ad02dc53051194a39bce6a28ae8",
-      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-    },
-    {
-      "name": "build-Chapter10RouteAllowedPadding",
-      "exit_code": 0,
-      "elapsed_seconds": 1.605935076950118,
-      "stdout_sha256": "78fb76344e2f7e56abed3eda55c86701f2fe1dd6b334edc03535d0c7a09e959c",
-      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-    },
-    {
-      "name": "build-Chapter10Sequence",
-      "exit_code": 0,
-      "elapsed_seconds": 1.560467611066997,
-      "stdout_sha256": "c35f2dbfe95bb7d53dab0eb0cca743441752f6144afad0c34e0ee10e9c9cc0cb",
-      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-    },
-    {
-      "name": "build-Chapter10SequenceTiming",
-      "exit_code": 0,
-      "elapsed_seconds": 1.6044120109872892,
-      "stdout_sha256": "b94fea06625bfce6e26fa19ae06688b04092f366060e1889bdd14f5ae000ba52",
-      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-    },
-    {
-      "name": "build-Chapter10SequenceRoutes",
-      "exit_code": 0,
-      "elapsed_seconds": 1.569514829898253,
-      "stdout_sha256": "5c71f772ce5e188a33dd9fb89fa8ddac82eda31276733220f51dbc75a20bd0b7",
-      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-    },
-    {
-      "name": "build-Challenge",
-      "exit_code": 0,
-      "elapsed_seconds": 4.400382557068951,
-      "stdout_sha256": "c0c567853a7f5d450d6142f47c27aa4c8d5cafa82b336dbb6a1fab8d8f21755c",
-      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-    },
-    {
-      "name": "build-Solution",
-      "exit_code": 0,
-      "elapsed_seconds": 1.5944610049482435,
-      "stdout_sha256": "0fbba45659f3706e3e3dcee1e381231d65cd1ed9d713167b47eb7db1efce29e7",
-      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-    },
-    {
-      "name": "default-build",
-      "exit_code": 0,
-      "elapsed_seconds": 4.492851685965434,
-      "stdout_sha256": "cecc5964c15d0570333036662e9c4b70d3287fb7c03169d19cfa655e22af7e1c",
-      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-    },
-    {
-      "name": "axioms",
-      "exit_code": 0,
-      "elapsed_seconds": 2.317187608918175,
-      "stdout_sha256": "ea2438122fa4da333642d3731f5bab8b773427efa3547ab56c0dd91799908c28",
-      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-    },
-    {
-      "name": "comparator",
-      "exit_code": 0,
-      "elapsed_seconds": 29.014986466034316,
-      "stdout_sha256": "d3bf4f66d159dca742781ab7cefdeddddf1a0433580fb28415249210fe908c02",
-      "stderr_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855"
-    }
-  ],
-  "resource_limits": {
-    "memory_max_bytes": 12884901888,
-    "swap_max_bytes": 0,
-    "cpu_quota_percent": 200,
-    "observed_memory_peak_bytes": 806850560,
-    "oom_events": 0
+  "predecessor_public_submission": {
+    "repository": "bernalde/sequence-routing-formulations",
+    "commit": "aa8883dedc0cb5700fc9c58b01e051c69acbc591",
+    "submission": "6taoq2yw9k92",
+    "mechanical_result": "Full service verification passed; later sanitize run42294377517 failed to render two selected generated proof declarations.",
+    "scope": "This local successor needs a new reviewed public commit and actual hosted/service gates; no duplicate intake or withdrawal has occurred."
   },
-  "cache_reuse": "Task-owned physical copy of pinned upstream cache. Candidate modules compiled during this task; final pass reuses exact unchanged project outputs from preserved attempts. Not a fresh upstream rebuild.",
-  "scope": "Local packaging of accepted source results; no new original theorem credit, hosted preflight, service review or registration."
+  "historical_preparation_current_local_full_gate": "not yet run for this source-level successor",
+  "historical_preparation_affected_source_independent_review": "coordinator to arrange after actual local full gate"
 }

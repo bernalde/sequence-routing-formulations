@@ -323,5 +323,47 @@
   ],
   "challenge_definition_compatibility": {
     "padSlots": "The same constructor explicitly names its proved source-generated _proof_2 interface. All computational definitions still undergo structural body comparison."
-  }
+  },
+  "source_level_selected_proof_visibility": {
+    "classification": "Source-level visibility repair only; no new mathematics or helper research credit",
+    "source_diagnostic": {
+      "receipt": "PROJECT-S290 verification/routing-renderable-proof-diag01/result.json",
+      "receipt_sha256": "730f525d0d2e3e011edaac62e6a5b3a862676af3df610132488293d939251b4d",
+      "stdout_sha256": "ef3b5bbb218faf6855da280bae2b6981761a0c513df631dcc925430c5b8e2907"
+    },
+    "declarations": [
+      {
+        "declaration": "Chapter10.Sequence.second._proof_2",
+        "complete_proposition": "\u2200 (k : Nat), 1 < k+2",
+        "source_header": "theorem second._proof_2 (k : \u2115) : 1 < k+2 := by omega",
+        "parent_definition": "Chapter10.Sequence.second",
+        "prior_parent_surface_sha256": "b70e5434a80e015afc7fef0fa4bb62517792d60b36ef22406630a4f0574edb51",
+        "new_parent_surface_sha256": "ddd266da77284df048759d2d092d4134b8f086235250fda0895bb83ee93b07c3",
+        "parent_before": "abbrev second (k : \u2115) : Fin (k+2) := \u27e81, by omega\u27e9",
+        "parent_after": "abbrev second (k : \u2115) : Fin (k+2) := \u27e81, second._proof_2 k\u27e9",
+        "completed_theorem_sha256": "1593c6a95f4d0491f10afcba289d811f53242df31689daf48ef144d6d0234d10",
+        "proof": "Completed ordinary omega theorem; exact elaborated type and full computational constant comparison remain mandatory."
+      },
+      {
+        "declaration": "Chapter10.Sequence.penultimate._proof_2",
+        "complete_proposition": "\u2200 (k : Nat), k < k+2",
+        "source_header": "theorem penultimate._proof_2 (k : \u2115) : k < k+2 := by omega",
+        "parent_definition": "Chapter10.Sequence.penultimate",
+        "prior_parent_surface_sha256": "3c76c5dcf7a56114f39d3114753ee7feee9513e35c1787fbeca126d30f3bf9af",
+        "new_parent_surface_sha256": "65d33a2e2e558cd25d4ee2dd614977104cc1ebee1636b705fe761cba7029a728",
+        "parent_before": "abbrev penultimate (k : \u2115) : Fin (k+2) := \u27e8k, by omega\u27e9",
+        "parent_after": "abbrev penultimate (k : \u2115) : Fin (k+2) := \u27e8k, penultimate._proof_2 k\u27e9",
+        "completed_theorem_sha256": "4c100e97cf7a4d9d7f6cd99cdc316a1a27a94f30c14196a11b668021a30f1b25",
+        "proof": "Completed ordinary omega theorem; exact elaborated type and full computational constant comparison remain mandatory."
+      }
+    ],
+    "all_other_Challenge_bytes_unchanged": true,
+    "source_copies_Solution_main_types_config_axioms_pins_metadata_unchanged": true,
+    "compiled_range_audit": "Private post-build audit of Challenge.ilean for every selected target; not a claim of full remote Verso rendering",
+    "no_computational_exemption": true,
+    "no_raw_declaration_or_anchor_insertion": true,
+    "documentation_comment_placement": "Existing parent doc comments retained immediately above parent abbreviations; theorem doc comments placed above the theorem commands."
+  },
+  "current_evidence": "VERIFICATION.json; historical source acceptance and current packet checks are distinct.",
+  "current_package_status": "LOCAL_CHECKED_AGENT_REVIEWED_DOCUMENTARY_SUCCESSOR"
 }

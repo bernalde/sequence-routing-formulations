@@ -87,11 +87,17 @@ abbrev first (k : ℕ) : Fin (k+2) := 0
 /-- Final position, numbered k+1. -/
 abbrev last (k : ℕ) : Fin (k+2) := Fin.last (k+1)
 
+/-- Explicit finite-index proof interface; support only. -/
+theorem second._proof_2 (k : ℕ) : 1 < k+2 := by omega
+
 /-- Position immediately following the initial depot. -/
-abbrev second (k : ℕ) : Fin (k+2) := ⟨1, by omega⟩
+abbrev second (k : ℕ) : Fin (k+2) := ⟨1, second._proof_2 k⟩
+
+/-- Explicit finite-index proof interface; support only. -/
+theorem penultimate._proof_2 (k : ℕ) : k < k+2 := by omega
 
 /-- Position immediately preceding the final depot. -/
-abbrev penultimate (k : ℕ) : Fin (k+2) := ⟨k, by omega⟩
+abbrev penultimate (k : ℕ) : Fin (k+2) := ⟨k, penultimate._proof_2 k⟩
 
 /-- Left endpoint position of a consecutive transition. -/
 abbrev left {k : ℕ} (p : Fin (k+1)) : Fin (k+2) := p.castSucc

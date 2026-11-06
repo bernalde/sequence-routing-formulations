@@ -1,3 +1,7 @@
+> Current local stage: Completed local compilation, every selected axiom census and genuine sandboxed Comparator with Lean, NanoDa and con-ron passed. Independent bounded source/package review returned SATISFACTORY with no mandatory mathematical or mechanical finding. Exact receipts, review hashes, warnings, cache/resource/runtime/usage limits and unchanged proof/compiler inputs are in VERIFICATION.json. Independent documentary-delta closure and exact software-only export are recorded separately by the coordinator. New public commit/release, hosted preflight, service submission/review and registration have not occurred.
+
+Current source-level successor: the two selected finite-index proofs have explicit named theorem commands and are referenced by their parent Fin abbreviations. Exact prior checks/reviews remain historical to the prior bytes; VERIFICATION.json controls current gates. Remote rendering and public actions have not been performed for this successor.
+
 # Finite sequence routing: routes, costs, and continuous timing
 
 This Lean 4.35 package exposes a qualified mathematical interpretation of the sequence-based routing formulation in Chapter 10 of David E. Bernal Neira's 2021 thesis, based on the joint paper *Formulating and solving routing problems on quantum computers*. It connects the literal binary rows to padded elementary customer routes, preserves the transition objective, and identifies exactly when the continuous timing rows have a solution for a fixed encoded route family.

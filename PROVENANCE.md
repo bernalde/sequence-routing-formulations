@@ -1,3 +1,7 @@
+> Current local stage: Completed local compilation, every selected axiom census and genuine sandboxed Comparator with Lean, NanoDa and con-ron passed. Independent bounded source/package review returned SATISFACTORY with no mandatory mathematical or mechanical finding. Exact receipts, review hashes, warnings, cache/resource/runtime/usage limits and unchanged proof/compiler inputs are in VERIFICATION.json. Independent documentary-delta closure and exact software-only export are recorded separately by the coordinator. New public commit/release, hosted preflight, service submission/review and registration have not occurred.
+
+Current source-level successor: the two selected finite-index proofs have explicit named theorem commands and are referenced by their parent Fin abbreviations. Exact prior checks/reviews remain historical to the prior bytes; VERIFICATION.json controls current gates. Remote rendering and public actions have not been performed for this successor.
+
 # Source and statement provenance
 
 This source-only package selects the finite sequence-routing and continuous-timing interfaces from an existing accepted Lean 4.35 development. The ten proof/dependency files have been copied without changing proofs, definitions or imports. Every copied file matches its recorded qualified migration hash; SOURCE-MANIFEST.json records the exact identities.

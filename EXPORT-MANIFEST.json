@@ -1,7 +1,7 @@
 {
   "schema": 1,
   "package": "routing-formulations",
-  "status": "LOCALLY_VERIFIED_SOURCE_ONLY_EXPORT_HOSTED_PREFLIGHT_AND_PUBLIC_RELEASE_UNPERFORMED",
+  "status": "LOCAL_CHECKED_AGENT_REVIEWED_DOCUMENTARY_SUCCESSOR",
   "files": [
     {
       "path": ".github/workflows/palomar-preflight.yml",
@@ -20,8 +20,8 @@
     },
     {
       "path": "Challenge.lean",
-      "sha256": "9049d1d24a29b43462b4d4d054e1a33d0137fa857e75f7bba0349c287dd1cabd",
-      "bytes": 11737
+      "sha256": "f4e5b998ff932ae5596e05c41fc5086226f563c60ea39199b77b6f3fa2970108",
+      "bytes": 11999
     },
     {
       "path": "Chapter02.lean",
@@ -85,23 +85,23 @@
     },
     {
       "path": "PROVENANCE.md",
-      "sha256": "dba0e742979931610179b26af6b69e17634f1a22363cc489542f0515d812fd2f",
-      "bytes": 2027
+      "sha256": "ee5e160c6a8823f8cc5b7d61fb0de65f121f89a72896caf8c45d5d531763dacd",
+      "bytes": 3004
     },
     {
       "path": "README.md",
-      "sha256": "13db2abaa07465ce8ebde16abe063ec948361ea369fe4561e032dbf45d1e1730",
-      "bytes": 11292
+      "sha256": "29907e0dcd6b398536c0626da4dc8ed559f608a53780df76b5ea96a22a875602",
+      "bytes": 12269
     },
     {
       "path": "RELEASE-STATUS.md",
-      "sha256": "2b23bfe44f7e5241c985590dd5ca4107759d7cda887fad010ea9ef17d9e819ce",
-      "bytes": 765
+      "sha256": "79710cda82c4b7c131e80601e537698217e5eac0eecfd435a964442384096d62",
+      "bytes": 1338
     },
     {
       "path": "SOURCE-MANIFEST.json",
-      "sha256": "3d349c3d755e99608fece16c978aceea8bf59686c25b93278d85a5dcc947fbe4",
-      "bytes": 12606
+      "sha256": "dd1afa5ea14dc76c11302b00cadb3d4fbd5fdc853a61bcea98ce375ce1349713",
+      "bytes": 15733
     },
     {
       "path": "Solution.lean",
@@ -110,8 +110,8 @@
     },
     {
       "path": "VERIFICATION.json",
-      "sha256": "fa097060d0900a61c1cd6a7f0b3dce56a194e8b4969455296be3a4327cf37ef6",
-      "bytes": 9399
+      "sha256": "6a5d39eb39819c311ac2dacc15af206b172bb16a2efeef40f07bb3f7bc648662",
+      "bytes": 26487
     },
     {
       "path": "comparator.json",
@@ -120,8 +120,8 @@
     },
     {
       "path": "formalization.yaml",
-      "sha256": "1a502edff39c4c85ed09f8d952c0446f6e0446a7c73d12ee6657b6d919ba8ce8",
-      "bytes": 12350
+      "sha256": "3268dd07d6039532be3e9646cc559e06bf70aebbd51d375d1cabc57efa8745d6",
+      "bytes": 12187
     },
     {
       "path": "lake-manifest.json",
