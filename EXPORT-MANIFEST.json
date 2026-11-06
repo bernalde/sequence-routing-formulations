@@ -1,0 +1,142 @@
+{
+  "schema": 1,
+  "package": "routing-formulations",
+  "status": "LOCALLY_VERIFIED_SOURCE_ONLY_EXPORT_HOSTED_PREFLIGHT_AND_PUBLIC_RELEASE_UNPERFORMED",
+  "files": [
+    {
+      "path": ".github/workflows/palomar-preflight.yml",
+      "sha256": "47b4a4fcd27b4a8068f08f23e0c15bc3eb38e20da1f6cb3b06abd96c3db57099",
+      "bytes": 836
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "94a3666e7596db603645ec7eaa358b92ede245882a9f3a600eaa57f1ea69b1b0",
+      "bytes": 42
+    },
+    {
+      "path": "AxiomAudit.lean",
+      "sha256": "3a0e67a028283bb0812f9c830514fa9f7ddde59779df8bc1fb05451b3a24d270",
+      "bytes": 644
+    },
+    {
+      "path": "Challenge.lean",
+      "sha256": "9049d1d24a29b43462b4d4d054e1a33d0137fa857e75f7bba0349c287dd1cabd",
+      "bytes": 11737
+    },
+    {
+      "path": "Chapter02.lean",
+      "sha256": "3019ef1caad4ab531143bd937fae56812bb9959a658bbe7368b5d5c761cc08af",
+      "bytes": 11829
+    },
+    {
+      "path": "Chapter02Model.lean",
+      "sha256": "01043a5cc7eb7291f008533cf2c8276773368541a7a15ef83756f50fc6f3a535",
+      "bytes": 17042
+    },
+    {
+      "path": "Chapter10.lean",
+      "sha256": "8a91be8dd1e48d1d263dad332c95e60745553bcd12aeefbfcf2093bfc521e77d",
+      "bytes": 8137
+    },
+    {
+      "path": "Chapter10RouteAllowedPadding.lean",
+      "sha256": "35f3ad2f330f41becef3556350e85513c625df53f7f80a1cbbf2630c1f969711",
+      "bytes": 1725
+    },
+    {
+      "path": "Chapter10RoutePadding.lean",
+      "sha256": "a3bd0146da9551d25dc8b26abdf7074b20d2b57290113b5ad2b2aab00b3eca7a",
+      "bytes": 6160
+    },
+    {
+      "path": "Chapter10Routes.lean",
+      "sha256": "ac88939a9bcfc39413594ed9931c37924c8e22b0900e97974b4fb39d3942ec0f",
+      "bytes": 15556
+    },
+    {
+      "path": "Chapter10RoutingData.lean",
+      "sha256": "65e9c1881559f306dbc30730c4bb6d37671ccd9441d98f75ede5714d744b2807",
+      "bytes": 942
+    },
+    {
+      "path": "Chapter10Sequence.lean",
+      "sha256": "713069b500e40905e1a15a7f5546bbde4e30ef10abe217c24dcc87e59c311b24",
+      "bytes": 12685
+    },
+    {
+      "path": "Chapter10SequenceRoutes.lean",
+      "sha256": "519d9976bee99dfeaa53397ba171159d8747f155620bf09f0d1196c57b6399f5",
+      "bytes": 7862
+    },
+    {
+      "path": "Chapter10SequenceTiming.lean",
+      "sha256": "cf2e1db69529dabe8c025c5a466952ea574d9a1e17de30af9e8d1562260263b6",
+      "bytes": 15805
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "cfc7749b96f63bd31c3c42b5c471bf756814053e847c10f3eb003417bc523d30",
+      "bytes": 11358
+    },
+    {
+      "path": "NOTICE.md",
+      "sha256": "61042f097379770a1ec2c62c88d156362970deda930a3970cfe95d726f35d278",
+      "bytes": 1188
+    },
+    {
+      "path": "PROVENANCE.md",
+      "sha256": "dba0e742979931610179b26af6b69e17634f1a22363cc489542f0515d812fd2f",
+      "bytes": 2027
+    },
+    {
+      "path": "README.md",
+      "sha256": "13db2abaa07465ce8ebde16abe063ec948361ea369fe4561e032dbf45d1e1730",
+      "bytes": 11292
+    },
+    {
+      "path": "RELEASE-STATUS.md",
+      "sha256": "2b23bfe44f7e5241c985590dd5ca4107759d7cda887fad010ea9ef17d9e819ce",
+      "bytes": 765
+    },
+    {
+      "path": "SOURCE-MANIFEST.json",
+      "sha256": "3d349c3d755e99608fece16c978aceea8bf59686c25b93278d85a5dcc947fbe4",
+      "bytes": 12606
+    },
+    {
+      "path": "Solution.lean",
+      "sha256": "c47bcbbf848283a525643941c9d6d17b58b0b146d5813eef8791d1f13aeb76b1",
+      "bytes": 2956
+    },
+    {
+      "path": "VERIFICATION.json",
+      "sha256": "fa097060d0900a61c1cd6a7f0b3dce56a194e8b4969455296be3a4327cf37ef6",
+      "bytes": 9399
+    },
+    {
+      "path": "comparator.json",
+      "sha256": "1f1240989f51fa8e45e251981e0e9da30b5b41fef93f70d0d2c2db07de9dc463",
+      "bytes": 720
+    },
+    {
+      "path": "formalization.yaml",
+      "sha256": "1a502edff39c4c85ed09f8d952c0446f6e0446a7c73d12ee6657b6d919ba8ce8",
+      "bytes": 12350
+    },
+    {
+      "path": "lake-manifest.json",
+      "sha256": "bf74d227ef0f5c0468c14fcb858d2a6ea64ecdd96792576245dc4ab63e07232b",
+      "bytes": 3561
+    },
+    {
+      "path": "lakefile.toml",
+      "sha256": "3a484d1ec0f9a96f0db500e7691fbf3f86a24b4b4e30c3c7c67b313309cc9d71",
+      "bytes": 722
+    },
+    {
+      "path": "lean-toolchain",
+      "sha256": "ca5f1f601d34c49079e38d7e7041eb0f2a9c227fbc1df0f404820069a052330c",
+      "bytes": 25
+    }
+  ]
+}

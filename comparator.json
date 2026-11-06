@@ -1,0 +1,21 @@
+{
+  "challenge_module": "Challenge",
+  "solution_module": "Solution",
+  "theorem_names": [
+    "Chapter10.Sequence.palomar_literal_iff_decoded",
+    "Chapter10.Sequence.palomar_literal_decodes_elementary_paths",
+    "Chapter10.Sequence.palomar_bounded_traces_encode",
+    "Chapter10.Sequence.palomar_decoded_cost",
+    "Chapter10.Sequence.palomar_literal_timing_iff_schedules",
+    "Chapter10.Sequence.palomar_literal_timing_exists_iff",
+    "Chapter10.Sequence.palomar_literal_duration_minimum",
+    "Chapter10.Sequence.padSlots._proof_2",
+    "Chapter10.Sequence.penultimate._proof_2",
+    "Chapter10.Sequence.second._proof_2"
+  ],
+  "permitted_axioms": [
+    "propext",
+    "Quot.sound",
+    "Classical.choice"
+  ]
+}

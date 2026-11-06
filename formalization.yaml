@@ -1,0 +1,225 @@
+version: v0.4
+project:
+  name: Finite sequence routing formulations and continuous timing
+  description: A qualified finite sequence-routing formalization connecting the complete source binary
+    rows with padded elementary customer routes and exact transition cost. For fixed valid slots,
+    explicit zero-depot clock/travel conditions give continuous timing feasibility through the earliest-schedule
+    recurrence and an attained minimum total return over timing assignments. Capacity and global
+    route optimization are outside scope.
+  authors:
+  - David E. Bernal Neira
+  responsible_maintainers:
+  - David E. Bernal Neira
+  license: Apache-2.0
+repository:
+  role: substantive-development
+classification:
+  arxiv:
+  - math.OC
+  msc2020:
+  - 90C27
+  - 90C11
+sources:
+- title: Modern computational approaches to nonlinear discrete optimization and applications in process
+    systems engineering
+  authors:
+  - David E. Bernal Neira
+  type: other
+  relationship: adapts
+  location: Carnegie Mellon University, Ph.D. thesis, 2021, Chapter 10; sequence-based and continuous-time
+    sequence formulations
+  note: The exact literal binary rows, nested timing sums and fixed-route duration interpretation
+    are represented with explicit coverage, padding and depot qualifications. Source documents are
+    cited rather than redistributed; no whole-thesis certification or source-author endorsement is
+    asserted.
+- title: Formulating and solving routing problems on quantum computers
+  authors:
+  - Stuart Harwood
+  - Claudio Gambella
+  - Dimitar Trenev
+  - Andrea Simonetto
+  - David Bernal
+  - Donny Greenberg
+  id: doi:10.1109/TQE.2021.3049230
+  type: paper
+  relationship: background
+  location: IEEE Transactions on Quantum Engineering 2, article 3100117 (2021)
+  note: Joint source research underlying the thesis chapter. This package does not establish a version-of-record
+    correction or claim quantum performance, optimizer implementation or author endorsement.
+status:
+  scope: 'Finite n customers, v vehicle slots, P=k+2 positions: literal sequence rows are equivalent
+    to one-hot slot encodings; decoded routes are elementary with length at most k and allowed arcs;
+    bounded exact-once route families encode back with exact decoded cost when depot padding is allowed
+    and depot-loop cost is zero. For fixed valid slots, zero depot clock and zero depot-loop travel
+    time give exact equivalence of literal timing rows and position schedules; timing feasibility
+    is equivalent to earliest-recursion closing feasibility, and earliest total return is attained
+    and minimal over feasible clocks for that fixed route family. Empty finite domains and idle routes
+    remain quantified. Load capacity, route/global optimum completeness, arc grids, pruning optimality,
+    ADMM/SCP, solver and quantum/empirical claims are excluded.'
+  main_results:
+  - declaration: Chapter10.Sequence.palomar_literal_iff_decoded
+    file: Solution.lean
+    comparator_config: comparator.json
+  - declaration: Chapter10.Sequence.palomar_literal_decodes_elementary_paths
+    file: Solution.lean
+    comparator_config: comparator.json
+  - declaration: Chapter10.Sequence.palomar_bounded_traces_encode
+    file: Solution.lean
+    comparator_config: comparator.json
+  - declaration: Chapter10.Sequence.palomar_decoded_cost
+    file: Solution.lean
+    comparator_config: comparator.json
+  - declaration: Chapter10.Sequence.palomar_literal_timing_iff_schedules
+    file: Solution.lean
+    comparator_config: comparator.json
+  - declaration: Chapter10.Sequence.palomar_literal_timing_exists_iff
+    file: Solution.lean
+    comparator_config: comparator.json
+  - declaration: Chapter10.Sequence.palomar_literal_duration_minimum
+    file: Solution.lean
+    comparator_config: comparator.json
+  - declaration: Chapter10.Sequence.padSlots._proof_2
+    file: Chapter10SequenceRoutes.lean
+    sorry_count: 0
+    axioms:
+    - Quot.sound
+    - propext
+    comparator_config: comparator.json
+    literature_dependencies: []
+    note: Auxiliary finite list/position-index proof check; not an independent research contribution.
+      Exact proposition and completed proof are checked; computational definitions remain structurally
+      compared.
+  - declaration: Chapter10.Sequence.penultimate._proof_2
+    file: Chapter10Sequence.lean
+    sorry_count: 0
+    axioms:
+    - Quot.sound
+    - propext
+    comparator_config: comparator.json
+    literature_dependencies: []
+    note: Auxiliary finite list/position-index proof check; not an independent research contribution.
+      Exact proposition and completed proof are checked; computational definitions remain structurally
+      compared.
+  - declaration: Chapter10.Sequence.second._proof_2
+    file: Chapter10Sequence.lean
+    sorry_count: 0
+    axioms:
+    - Quot.sound
+    - propext
+    comparator_config: comparator.json
+    literature_dependencies: []
+    note: Auxiliary finite list/position-index proof check; not an independent research contribution.
+      Exact proposition and completed proof are checked; computational definitions remain structurally
+      compared.
+  package_verification: Actual local compilation, axiom census for seven main and three auxiliary
+    proof targets, genuine sandboxed Comparator and Lean/NanoDa/con-ron passed. Only the auxiliary
+    propositions use theorem-target proof comparison; all computational definitions remain structurally
+    compared. Hosted preflight, service submission and registration are unperformed.
+automation:
+  methods:
+  - method: agent
+    models: []
+    framework: Codex
+    tool_setup: Exact accepted source closure, independent Mathlib-only statements, explicit source-generated
+      indexing-proof interface, actual bounded compilation/axioms/sandboxed Comparator and Lean/NanoDa/con-ron
+      checks.
+    prompting_notes: Retain every source hypothesis and actual definition; use source proof procedures
+      unchanged, distinguish route feasibility and fixed-route timing from optimization/software/quantum
+      claims.
+    cost:
+      spend_usd: unknown; native counters/inclusion and complete attributable billing unavailable
+      wall_time: not attributed; source-only preparation
+      hardware: Local Linux, enforced 12 GiB/no-swap/two-CPU cap; exact pinned upstream and prior
+        exact project outputs reused
+  notes: Existing accepted source proofs and migration qualifications are reused; the ten copied
+    source modules are unchanged. New package compilation, all ten target axiom checks and genuine
+    Comparator with Lean/NanoDa/con-ron passed. Challenge has seven deliberate main theorem obligations
+    and three completely proved finite-index helpers, with the explicit proof-target comparison boundary
+    recorded. Solution does not import Challenge. Complete attributable model identity/counters/cost/billing
+    remain unknown.
+fidelity:
+  divergences: 'Finite n customers, v vehicle slots, P=k+2 positions: literal sequence rows are equivalent
+    to one-hot slot encodings; decoded routes are elementary with length at most k and allowed arcs;
+    bounded exact-once route families encode back with exact decoded cost when depot padding is allowed
+    and depot-loop cost is zero. For fixed valid slots, zero depot clock and zero depot-loop travel
+    time give exact equivalence of literal timing rows and position schedules; timing feasibility
+    is equivalent to earliest-recursion closing feasibility, and earliest total return is attained
+    and minimal over feasible clocks for that fixed route family. Empty finite domains and idle routes
+    remain quantified. Load capacity, route/global optimum completeness, arc grids, pruning optimality,
+    ADMM/SCP, solver and quantum/empirical claims are excluded. The original routing and timing arguments
+    are given explicit finite and depot conditions. No new result or unchanged-paper certification
+    is advertised.'
+  comparison_boundary: Seven original main theorem interfaces plus three explicitly recorded finite-index
+    proof targets. Auxiliary proof propositions match exactly and Solution proofs are kernel/axiom
+    checked; no definition-body matching exemption.
+review:
+  status: agent-reviewed
+  notes: The seven main interfaces retain exact original source hypotheses/conclusions. Actual package
+    compilation, all ten compared target axiom checks, genuine sandboxed Comparator and Lean/NanoDa/con-ron
+    passed. Three auxiliary finite-index theorem targets compare propositions and checked completed
+    proofs rather than identical proof bodies; every computational definition still compares structurally.
+    Independent source-first packaging review assessed the scope and this boundary. All ten accepted
+    source modules remain unchanged. No new theorem credit, human peer review, public hosted preflight,
+    Palomar service verdict or registration is claimed.
+  reviewers:
+  - Independent source-first packaging reviewer (requested Astra; observed runtime identity unavailable)
+  - Codex (integration and actual bounded verification)
+alignment:
+  namespace: Chapter10.Sequence
+  statements:
+  - source: Chapter10.Sequence.literal_iff_decoded
+    lean: Chapter10.Sequence.palomar_literal_iff_decoded
+    module: Solution
+    status: adapted interface
+    note: Source theorem signature is retained under a new alias; definition bodies are exposed independently
+      in Challenge. Independent source-first package review and actual local comparison completed
+      at the recorded scope.
+  - source: Chapter10.Sequence.literal_decodes_elementary_paths
+    lean: Chapter10.Sequence.palomar_literal_decodes_elementary_paths
+    module: Solution
+    status: adapted interface
+    note: Source theorem signature is retained under a new alias; definition bodies are exposed independently
+      in Challenge. Independent source-first package review and actual local comparison completed
+      at the recorded scope.
+  - source: Chapter10.Sequence.bounded_traces_encode
+    lean: Chapter10.Sequence.palomar_bounded_traces_encode
+    module: Solution
+    status: adapted interface
+    note: Source theorem signature is retained under a new alias; definition bodies are exposed independently
+      in Challenge. Independent source-first package review and actual local comparison completed
+      at the recorded scope.
+  - source: Chapter10.Sequence.decoded_cost
+    lean: Chapter10.Sequence.palomar_decoded_cost
+    module: Solution
+    status: adapted interface
+    note: Source theorem signature is retained under a new alias; definition bodies are exposed independently
+      in Challenge. Independent source-first package review and actual local comparison completed
+      at the recorded scope.
+  - source: Chapter10.Sequence.literal_timing_iff_schedules
+    lean: Chapter10.Sequence.palomar_literal_timing_iff_schedules
+    module: Solution
+    status: adapted interface
+    note: Source theorem signature is retained under a new alias; definition bodies are exposed independently
+      in Challenge. Independent source-first package review and actual local comparison completed
+      at the recorded scope.
+  - source: Chapter10.Sequence.literal_timing_exists_iff
+    lean: Chapter10.Sequence.palomar_literal_timing_exists_iff
+    module: Solution
+    status: adapted interface
+    note: Source theorem signature is retained under a new alias; definition bodies are exposed independently
+      in Challenge. Independent source-first package review and actual local comparison completed
+      at the recorded scope.
+  - source: Chapter10.Sequence.literal_duration_minimum
+    lean: Chapter10.Sequence.palomar_literal_duration_minimum
+    module: Solution
+    status: adapted interface
+    note: Source theorem signature is retained under a new alias; definition bodies are exposed independently
+      in Challenge. Independent source-first package review and actual local comparison completed
+      at the recorded scope.
+  auxiliary_proof_targets:
+  - Chapter10.Sequence.padSlots._proof_2
+  - Chapter10.Sequence.penultimate._proof_2
+  - Chapter10.Sequence.second._proof_2
+acknowledgements: The joint source-paper authors, Lean/Mathlib contributors and AI-assisted proof
+  development. Bibliographic authorship and formalization responsibility are distinguished; no other
+  source-author endorsement is claimed.

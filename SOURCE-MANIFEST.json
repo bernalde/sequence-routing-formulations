@@ -1,0 +1,327 @@
+{
+  "source_tree": "Lean 4.35 migration accepted at 32fbcfa7f4585e4a27437157b69e2c627280e58e",
+  "source_mathlib": "56a005855ea17e0b0958f73ec801ae140b0a1679",
+  "copied_source_modules": [
+    {
+      "path": "Chapter02.lean",
+      "origin": "lean-modern/Chapter02.lean",
+      "sha256": "3019ef1caad4ab531143bd937fae56812bb9959a658bbe7368b5d5c761cc08af",
+      "bytes": 11829,
+      "lines": 254,
+      "qualified_migration_exact": true,
+      "proof_modifications": false
+    },
+    {
+      "path": "Chapter02Model.lean",
+      "origin": "lean-modern/Chapter02Model.lean",
+      "sha256": "01043a5cc7eb7291f008533cf2c8276773368541a7a15ef83756f50fc6f3a535",
+      "bytes": 17042,
+      "lines": 351,
+      "qualified_migration_exact": true,
+      "proof_modifications": false
+    },
+    {
+      "path": "Chapter10.lean",
+      "origin": "lean-modern/Chapter10.lean",
+      "sha256": "8a91be8dd1e48d1d263dad332c95e60745553bcd12aeefbfcf2093bfc521e77d",
+      "bytes": 8137,
+      "lines": 186,
+      "qualified_migration_exact": true,
+      "proof_modifications": false
+    },
+    {
+      "path": "Chapter10RouteAllowedPadding.lean",
+      "origin": "lean-modern/Chapter10RouteAllowedPadding.lean",
+      "sha256": "35f3ad2f330f41becef3556350e85513c625df53f7f80a1cbbf2630c1f969711",
+      "bytes": 1725,
+      "lines": 46,
+      "qualified_migration_exact": true,
+      "proof_modifications": false
+    },
+    {
+      "path": "Chapter10RoutePadding.lean",
+      "origin": "lean-modern/Chapter10RoutePadding.lean",
+      "sha256": "a3bd0146da9551d25dc8b26abdf7074b20d2b57290113b5ad2b2aab00b3eca7a",
+      "bytes": 6160,
+      "lines": 135,
+      "qualified_migration_exact": true,
+      "proof_modifications": false
+    },
+    {
+      "path": "Chapter10Routes.lean",
+      "origin": "lean-modern/Chapter10Routes.lean",
+      "sha256": "ac88939a9bcfc39413594ed9931c37924c8e22b0900e97974b4fb39d3942ec0f",
+      "bytes": 15556,
+      "lines": 333,
+      "qualified_migration_exact": true,
+      "proof_modifications": false
+    },
+    {
+      "path": "Chapter10RoutingData.lean",
+      "origin": "lean-modern/Chapter10RoutingData.lean",
+      "sha256": "65e9c1881559f306dbc30730c4bb6d37671ccd9441d98f75ede5714d744b2807",
+      "bytes": 942,
+      "lines": 35,
+      "qualified_migration_exact": true,
+      "proof_modifications": false
+    },
+    {
+      "path": "Chapter10Sequence.lean",
+      "origin": "lean-modern/Chapter10Sequence.lean",
+      "sha256": "713069b500e40905e1a15a7f5546bbde4e30ef10abe217c24dcc87e59c311b24",
+      "bytes": 12685,
+      "lines": 328,
+      "qualified_migration_exact": true,
+      "proof_modifications": false
+    },
+    {
+      "path": "Chapter10SequenceRoutes.lean",
+      "origin": "lean-modern/Chapter10SequenceRoutes.lean",
+      "sha256": "519d9976bee99dfeaa53397ba171159d8747f155620bf09f0d1196c57b6399f5",
+      "bytes": 7862,
+      "lines": 187,
+      "qualified_migration_exact": true,
+      "proof_modifications": false
+    },
+    {
+      "path": "Chapter10SequenceTiming.lean",
+      "origin": "lean-modern/Chapter10SequenceTiming.lean",
+      "sha256": "cf2e1db69529dabe8c025c5a466952ea574d9a1e17de30af9e8d1562260263b6",
+      "bytes": 15805,
+      "lines": 374,
+      "qualified_migration_exact": true,
+      "proof_modifications": false
+    }
+  ],
+  "challenge_definition_fragments": [
+    {
+      "file": "Chapter10RoutingData.lean",
+      "name": "Node",
+      "sha256": "e5aaadf96809f7eb092223ee5b5198dac78aaf9860309465a63356d1b21c43e9"
+    },
+    {
+      "file": "Chapter10RoutingData.lean",
+      "name": "Data",
+      "sha256": "431228f064f77fed2a51ef9081268547ee1d8c764dd7c0c2d8a3cdd1f36e4c2d"
+    },
+    {
+      "file": "Chapter10Routes.lean",
+      "name": "AllowedFrom",
+      "sha256": "269c63872ef612676373519958c5566a3a9c5e5ed3504749157c00d1237016f2"
+    },
+    {
+      "file": "Chapter10Routes.lean",
+      "name": "edgeCostFrom",
+      "sha256": "1783241f2271bfd291900c581aca65ee79d66ca851f6fb5687c10de01a59532b"
+    },
+    {
+      "file": "Chapter10Routes.lean",
+      "name": "ScheduleFrom",
+      "sha256": "e6cc0f9a53bac9474d5db4fc37775751f99ebd4acb726bd556c201191c06d02c"
+    },
+    {
+      "file": "Chapter10Routes.lean",
+      "name": "earliestTimes",
+      "sha256": "c24ed9936e0c0442b54af8cce14a7937e7bd1d6cfb4c1eaccde09175560f8b71"
+    },
+    {
+      "file": "Chapter10Routes.lean",
+      "name": "earliestReturn",
+      "sha256": "fb7bc96997dc9f0bb0e86cf2908f0367cf0184b68b3daafe608a408c4a24b72e"
+    },
+    {
+      "file": "Chapter10Routes.lean",
+      "name": "EarliestWithin",
+      "sha256": "e8c7dda5eedb7cb129bd2d6e2d198f91131f1cdbf9e8d576982acc5a967a1e84"
+    },
+    {
+      "file": "Chapter10RoutePadding.lean",
+      "name": "paddedWalk",
+      "sha256": "8208180833dd24e29f1f80babbf5d3c1b473633dc225e40dd56592e0eae45028"
+    },
+    {
+      "file": "Chapter10Sequence.lean",
+      "name": "Array",
+      "sha256": "ac1cb7a7d0f91109b7bda1e35c74ad7f8137f604d5325d0e785529e669b9986b"
+    },
+    {
+      "file": "Chapter10Sequence.lean",
+      "name": "Slots",
+      "sha256": "48c96a6ef7fcc88208c047a62983967bb036daf299dbff6647bb98fab32e4a87"
+    },
+    {
+      "file": "Chapter10Sequence.lean",
+      "name": "first",
+      "sha256": "45d295e3020a0a4ff7764291bfba6ad30ea3493b5ec4ddc2eccc1e340a8a8661"
+    },
+    {
+      "file": "Chapter10Sequence.lean",
+      "name": "last",
+      "sha256": "143a47ffe01942a4b2cc6b317eb8bfffcb514d4566c0e88ce369062f9ee2d0a8"
+    },
+    {
+      "file": "Chapter10Sequence.lean",
+      "name": "second",
+      "sha256": "b70e5434a80e015afc7fef0fa4bb62517792d60b36ef22406630a4f0574edb51"
+    },
+    {
+      "file": "Chapter10Sequence.lean",
+      "name": "penultimate",
+      "sha256": "3c76c5dcf7a56114f39d3114753ee7feee9513e35c1787fbeca126d30f3bf9af"
+    },
+    {
+      "file": "Chapter10Sequence.lean",
+      "name": "left",
+      "sha256": "21218690113cff40f2b6db6933b0ef890ac72720f12bc2ba7370ba315f76af00"
+    },
+    {
+      "file": "Chapter10Sequence.lean",
+      "name": "right",
+      "sha256": "88bbed40b2ed3b4fa43fb738056b43a42f08c0bde6c2aca49725e7cb3c919d5c"
+    },
+    {
+      "file": "Chapter10Sequence.lean",
+      "name": "Binary",
+      "sha256": "03896be46fb6dcf20bd456a434ccf6cb9288039cbeafe6f35a083bb1720c7e82"
+    },
+    {
+      "file": "Chapter10Sequence.lean",
+      "name": "CustomerOnce",
+      "sha256": "de866bea63a9c9deafb7bb1723f8d76ab1bb4d6856dccc2df5d983d6beb82a85"
+    },
+    {
+      "file": "Chapter10Sequence.lean",
+      "name": "PositionOnce",
+      "sha256": "986345cb20fb9fa2ddd6a79db3f7a32473a519715d3c20ca450afe8d4b42e747"
+    },
+    {
+      "file": "Chapter10Sequence.lean",
+      "name": "AllowedProducts",
+      "sha256": "25faf410ee6840753d012c984b87c12b69d0de8fc0a03c040f2f59df5b67d7fc"
+    },
+    {
+      "file": "Chapter10Sequence.lean",
+      "name": "AbsorbingProducts",
+      "sha256": "7b73423f94745588af62794641ebb2702668b774307f975ded1398ece799f581"
+    },
+    {
+      "file": "Chapter10Sequence.lean",
+      "name": "FixedRows",
+      "sha256": "b6c9de9ef1112e8c73cf5aad4578a92c5c30a6c7c55894dcbb5c9ca6e1a40e8b"
+    },
+    {
+      "file": "Chapter10Sequence.lean",
+      "name": "Literal",
+      "sha256": "510baed6121e06f7c84b3f452b82c33af23f1ba8df6d70d0de81462beb6cda4d"
+    },
+    {
+      "file": "Chapter10Sequence.lean",
+      "name": "objective",
+      "sha256": "dac581f7f10edfe389a771bf8215430be3adc0f483dd821341499c8f54a53f8f"
+    },
+    {
+      "file": "Chapter10Sequence.lean",
+      "name": "encode",
+      "sha256": "b76c7622cf4aabaa727d0af2f8711739ad0229fedcd92573bda7629bbfb79446"
+    },
+    {
+      "file": "Chapter10Sequence.lean",
+      "name": "SlotStructure",
+      "sha256": "3525c86025b4c462cfbd8bb537fbcc14b4b4d0b8dfba08a6a33366385f7a2b0d"
+    },
+    {
+      "file": "Chapter10Sequence.lean",
+      "name": "decode",
+      "sha256": "67788b514be7dc9e0618f019a73b46fbb747b59d6260c850dc1e92716df27a0f"
+    },
+    {
+      "file": "Chapter10SequenceTiming.lean",
+      "name": "customerRHS",
+      "sha256": "9f8f9e3caab09249645025b19bd7b590bc5bb35397c931731b28e907aa15feec"
+    },
+    {
+      "file": "Chapter10SequenceTiming.lean",
+      "name": "returnRHS",
+      "sha256": "78e8c4de1d3a5a9cc5700dfcb44234d2655b017ccd808a4aabb89cd352e56676"
+    },
+    {
+      "file": "Chapter10SequenceTiming.lean",
+      "name": "LiteralTiming",
+      "sha256": "0a92c3cdba16721a93d61e8090d80540a494bd1ae671a9940f2548503198ef24"
+    },
+    {
+      "file": "Chapter10SequenceRoutes.lean",
+      "name": "padSlots",
+      "sha256": "03efa8019f71ab31e89299a62a106cbfb401460a13988e90a520ad0c03e2d102",
+      "copy_mode": "Source constructor with explicitly named, proved source-generated indexing helper; structural computational body comparison passed. Recorded fragment hash identifies original source text."
+    }
+  ],
+  "selected_theorems": [
+    {
+      "declaration": "Chapter10.Sequence.palomar_literal_iff_decoded",
+      "source_declaration": "Chapter10.Sequence.literal_iff_decoded",
+      "source_file": "Chapter10Sequence.lean",
+      "signature_sha256": "3d1e90cf5238d7c71f941bed0ca0ced11b7db608382c747c31ad1f5509f73c83"
+    },
+    {
+      "declaration": "Chapter10.Sequence.palomar_literal_decodes_elementary_paths",
+      "source_declaration": "Chapter10.Sequence.literal_decodes_elementary_paths",
+      "source_file": "Chapter10SequenceRoutes.lean",
+      "signature_sha256": "cceb4cfa46d21e04bf5618d3b5aee460c268ee228446dbd88d954a2fbc64533a"
+    },
+    {
+      "declaration": "Chapter10.Sequence.palomar_bounded_traces_encode",
+      "source_declaration": "Chapter10.Sequence.bounded_traces_encode",
+      "source_file": "Chapter10SequenceRoutes.lean",
+      "signature_sha256": "a4bca68ec7d27d9f5fe2e73ed9a86a8901677db5ff91cd7258302089078433e4"
+    },
+    {
+      "declaration": "Chapter10.Sequence.palomar_decoded_cost",
+      "source_declaration": "Chapter10.Sequence.decoded_cost",
+      "source_file": "Chapter10SequenceTiming.lean",
+      "signature_sha256": "72cc5bd1b3bf75d4bc2d5175d82dc5931759410b061a5c5e40557c80b39c07b3"
+    },
+    {
+      "declaration": "Chapter10.Sequence.palomar_literal_timing_iff_schedules",
+      "source_declaration": "Chapter10.Sequence.literal_timing_iff_schedules",
+      "source_file": "Chapter10SequenceTiming.lean",
+      "signature_sha256": "b0d05903853c5916bfe60227cbfb1585745df19c7eb7e5e461e88438680c2f44"
+    },
+    {
+      "declaration": "Chapter10.Sequence.palomar_literal_timing_exists_iff",
+      "source_declaration": "Chapter10.Sequence.literal_timing_exists_iff",
+      "source_file": "Chapter10SequenceTiming.lean",
+      "signature_sha256": "23bb97aab03077cb29abc18238d171005de9588b31a1207146a6c5d92874dcbb"
+    },
+    {
+      "declaration": "Chapter10.Sequence.palomar_literal_duration_minimum",
+      "source_declaration": "Chapter10.Sequence.literal_duration_minimum",
+      "source_file": "Chapter10SequenceTiming.lean",
+      "signature_sha256": "eec3a9280213cba52c78c891821640b800c04de334c8deacc270e6d9c63324ab"
+    }
+  ],
+  "proof_source_changes": false,
+  "build_status": "Actual local build/axioms/sandboxed Comparator and Lean/NanoDa/con-ron passed; see VERIFICATION.json",
+  "independent_package_review": "Source-first independent packaging review; final documentary readback recorded separately",
+  "new_mathematical_results": false,
+  "auxiliary_comparison_theorems": [
+    {
+      "declaration": "Chapter10.Sequence.padSlots._proof_2",
+      "role": "Finite list/position index validity proof; support only, not independent research contribution",
+      "comparison": "Exact proposition/type equality with completed solution proof and axiom/kernel replay; proof-body byte equality is not required for this explicit theorem target"
+    },
+    {
+      "declaration": "Chapter10.Sequence.penultimate._proof_2",
+      "role": "Finite list/position index validity proof; support only, not independent research contribution",
+      "comparison": "Exact proposition/type equality with completed solution proof and axiom/kernel replay; proof-body byte equality is not required for this explicit theorem target"
+    },
+    {
+      "declaration": "Chapter10.Sequence.second._proof_2",
+      "role": "Finite second-position validity proof; support only, not independent research contribution",
+      "comparison": "Exact proposition/type equality and completed proof plus axiom/kernel replay; no computational definition exemption"
+    }
+  ],
+  "challenge_definition_compatibility": {
+    "padSlots": "The same constructor explicitly names its proved source-generated _proof_2 interface. All computational definitions still undergo structural body comparison."
+  }
+}
